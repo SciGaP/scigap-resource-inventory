@@ -1,1 +1,34 @@
-{"id":"js-156.157.jetstream-cloud.org_6249e194-05a8-43b3-9154-a383c45dc14d","name":"js-156-157.jetstream-cloud.org","description":"Jetstream cluster for the SGCI and PEARC Container Tutorial","resourceType":"COMPUTE","resource":{"schedulerType":"BATCH","executionCommands":[],"batchSystem":{"commandPaths":[],"partitions":[{"name":"small-cloud","totalNodes":1,"nodeHardware":{"cpuCount":2,"memorySize":"4096"},"computeQuotas":{"maxJobsTotal":50,"maxNodesPerJob":1,"maxTimePerJob":30,"maxMemoryPerJob":4096,"maxCPUsPerJob":2}}]}},"host":"js-156-157.jetstream-cloud.org","connection":{"connectionProtocol":"SSH","securityProtocol":"SSHKEYS","port":22}}
+{
+  "id" : "js-156.157.jetstream-cloud.org_6249e194-05a8-43b3-9154-a383c45dc14d",
+  "name" : "js-156-157.jetstream-cloud.org",
+  "description" : "Jetstream cluster for the SGCI and PEARC Container Tutorial",
+  "resourceType" : "COMPUTE",
+  "resource" : {
+    "schedulerType" : "BATCH",
+    "executionCommands" : [ ],
+    "batchSystem" : {
+      "commandPaths" : [ ],
+      "partitions" : [ {
+        "name" : "small-cloud",
+        "totalNodes" : 1,
+        "nodeHardware" : {
+          "cpuCount" : 2,
+          "memorySize" : "4096"
+        },
+        "computeQuotas" : {
+          "maxJobsTotal" : 50,
+          "maxNodesPerJob" : 1,
+          "maxTimePerJob" : 30,
+          "maxMemoryPerJob" : 4096,
+          "maxCPUsPerJob" : 2
+        }
+      } ]
+    }
+  },
+  "host" : "js-156-157.jetstream-cloud.org",
+  "connection" : {
+    "connectionProtocol" : "SSH",
+    "securityProtocol" : "SSHKEYS",
+    "port" : 22
+  }
+}
