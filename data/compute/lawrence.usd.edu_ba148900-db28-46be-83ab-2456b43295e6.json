@@ -1,1 +1,79 @@
-{"id":"lawrence.usd.edu_ba148900-db28-46be-83ab-2456b43295e6","name":"lawrence.usd.edu","description":"New USD SLURM cluster","resourceType":"COMPUTE","resource":{"schedulerType":"BATCH","storageResource":{"storageType":"POSIX","connection":{"connectionProtocol":"SCP","securityProtocol":"SSHKEYS","port":22}},"executionCommands":[],"batchSystem":{"commandPaths":[{"name":"SUBMISSION","path":"sbatch"},{"name":"JOB_MONITORING","path":"squeue"},{"name":"DELETION","path":"scancel"}],"partitions":[{"name":"gpu","totalNodes":1,"nodeHardware":{"cpuCount":0,"memorySize":"0"},"computeQuotas":{"maxJobsTotal":20,"maxNodesPerJob":1,"maxTimePerJob":120,"maxMemoryPerJob":0,"maxCPUsPerJob":32}},{"name":"himem","totalNodes":2,"nodeHardware":{"cpuCount":0,"memorySize":"0"},"computeQuotas":{"maxJobsTotal":20,"maxNodesPerJob":2,"maxTimePerJob":120,"maxMemoryPerJob":0,"maxCPUsPerJob":32}},{"name":"preemptible","totalNodes":80,"nodeHardware":{"cpuCount":0,"memorySize":"0"},"computeQuotas":{"maxJobsTotal":50,"maxNodesPerJob":80,"maxTimePerJob":5400,"maxMemoryPerJob":0,"maxCPUsPerJob":1280}}]}},"host":"lawrence.usd.edu","connection":{"connectionProtocol":"SSH","securityProtocol":"PASSWORDS","port":22}}
+{
+  "id" : "lawrence.usd.edu_ba148900-db28-46be-83ab-2456b43295e6",
+  "name" : "lawrence.usd.edu",
+  "description" : "New USD SLURM cluster",
+  "resourceType" : "COMPUTE",
+  "resource" : {
+    "schedulerType" : "BATCH",
+    "storageResource" : {
+      "storageType" : "POSIX",
+      "connection" : {
+        "connectionProtocol" : "SCP",
+        "securityProtocol" : "SSHKEYS",
+        "port" : 22
+      }
+    },
+    "executionCommands" : [ ],
+    "batchSystem" : {
+      "commandPaths" : [ {
+        "name" : "SUBMISSION",
+        "path" : "sbatch"
+      }, {
+        "name" : "JOB_MONITORING",
+        "path" : "squeue"
+      }, {
+        "name" : "DELETION",
+        "path" : "scancel"
+      } ],
+      "partitions" : [ {
+        "name" : "gpu",
+        "totalNodes" : 1,
+        "nodeHardware" : {
+          "cpuCount" : 0,
+          "memorySize" : "0"
+        },
+        "computeQuotas" : {
+          "maxJobsTotal" : 20,
+          "maxNodesPerJob" : 1,
+          "maxTimePerJob" : 120,
+          "maxMemoryPerJob" : 0,
+          "maxCPUsPerJob" : 32
+        }
+      }, {
+        "name" : "himem",
+        "totalNodes" : 2,
+        "nodeHardware" : {
+          "cpuCount" : 0,
+          "memorySize" : "0"
+        },
+        "computeQuotas" : {
+          "maxJobsTotal" : 20,
+          "maxNodesPerJob" : 2,
+          "maxTimePerJob" : 120,
+          "maxMemoryPerJob" : 0,
+          "maxCPUsPerJob" : 32
+        }
+      }, {
+        "name" : "preemptible",
+        "totalNodes" : 80,
+        "nodeHardware" : {
+          "cpuCount" : 0,
+          "memorySize" : "0"
+        },
+        "computeQuotas" : {
+          "maxJobsTotal" : 50,
+          "maxNodesPerJob" : 80,
+          "maxTimePerJob" : 5400,
+          "maxMemoryPerJob" : 0,
+          "maxCPUsPerJob" : 1280
+        }
+      } ]
+    }
+  },
+  "host" : "lawrence.usd.edu",
+  "connection" : {
+    "connectionProtocol" : "SSH",
+    "securityProtocol" : "PASSWORDS",
+    "port" : 22
+  }
+}
