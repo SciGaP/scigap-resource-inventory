@@ -1,1 +1,51 @@
-{"id":"mio.mines.edu_0b1960e9-3ea0-4d4b-8126-67476d718e7b","name":"mio.mines.edu","description":"This is Mines resource. Adding here to test with Django portal.","resourceType":"COMPUTE","resource":{"schedulerType":"BATCH","storageResource":{"storageType":"POSIX","connection":{"connectionProtocol":"SCP","securityProtocol":"SSHKEYS","port":22}},"executionCommands":[],"batchSystem":{"commandPaths":[{"name":"SUBMISSION","path":"sbatch"},{"name":"JOB_MONITORING","path":"squeue"},{"name":"DELETION","path":"scancel"}],"partitions":[{"name":"lcarr","totalNodes":1,"nodeHardware":{"cpuCount":0,"memorySize":"0"},"computeQuotas":{"maxJobsTotal":100,"maxNodesPerJob":1,"maxTimePerJob":600,"maxMemoryPerJob":0,"maxCPUsPerJob":12}}]}},"host":"mio.mines.edu","connection":{"connectionProtocol":"SSH","securityProtocol":"SSHKEYS","port":0}}
+{
+  "id" : "mio.mines.edu_0b1960e9-3ea0-4d4b-8126-67476d718e7b",
+  "name" : "mio.mines.edu",
+  "description" : "This is Mines resource. Adding here to test with Django portal.",
+  "resourceType" : "COMPUTE",
+  "resource" : {
+    "schedulerType" : "BATCH",
+    "storageResource" : {
+      "storageType" : "POSIX",
+      "connection" : {
+        "connectionProtocol" : "SCP",
+        "securityProtocol" : "SSHKEYS",
+        "port" : 22
+      }
+    },
+    "executionCommands" : [ ],
+    "batchSystem" : {
+      "commandPaths" : [ {
+        "name" : "SUBMISSION",
+        "path" : "sbatch"
+      }, {
+        "name" : "JOB_MONITORING",
+        "path" : "squeue"
+      }, {
+        "name" : "DELETION",
+        "path" : "scancel"
+      } ],
+      "partitions" : [ {
+        "name" : "lcarr",
+        "totalNodes" : 1,
+        "nodeHardware" : {
+          "cpuCount" : 0,
+          "memorySize" : "0"
+        },
+        "computeQuotas" : {
+          "maxJobsTotal" : 100,
+          "maxNodesPerJob" : 1,
+          "maxTimePerJob" : 600,
+          "maxMemoryPerJob" : 0,
+          "maxCPUsPerJob" : 12
+        }
+      } ]
+    }
+  },
+  "host" : "mio.mines.edu",
+  "connection" : {
+    "connectionProtocol" : "SSH",
+    "securityProtocol" : "SSHKEYS",
+    "port" : 0
+  }
+}
