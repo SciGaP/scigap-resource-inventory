@@ -1,1 +1,19 @@
-{"id":"ec2-52-15-129-208.us-east-2.compute.amazonaws.com_22b67904-721a-4514-884d-c0f2751b8978","name":"ec2-52-15-129-208.us-east-2.compute.amazonaws.com","description":"Aurora mesos master in aws deployment","resourceType":"COMPUTE","resource":{"storageResource":{"storageType":"POSIX","connection":{"connectionProtocol":"SCP","securityProtocol":"SSHKEYS","port":22}},"executionCommands":[]},"host":"ec2-52-15-129-208.us-east-2.compute.amazonaws.com","connection":{}}
+{
+  "id" : "ec2-52-15-129-208.us-east-2.compute.amazonaws.com_22b67904-721a-4514-884d-c0f2751b8978",
+  "name" : "ec2-52-15-129-208.us-east-2.compute.amazonaws.com",
+  "description" : "Aurora mesos master in aws deployment",
+  "resourceType" : "COMPUTE",
+  "resource" : {
+    "storageResource" : {
+      "storageType" : "POSIX",
+      "connection" : {
+        "connectionProtocol" : "SCP",
+        "securityProtocol" : "SSHKEYS",
+        "port" : 22
+      }
+    },
+    "executionCommands" : [ ]
+  },
+  "host" : "ec2-52-15-129-208.us-east-2.compute.amazonaws.com",
+  "connection" : { }
+}
