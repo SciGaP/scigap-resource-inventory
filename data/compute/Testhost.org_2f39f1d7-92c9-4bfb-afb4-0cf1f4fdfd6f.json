@@ -1,1 +1,15 @@
-{"id":"Testhost.org_2f39f1d7-92c9-4bfb-afb4-0cf1f4fdfd6f","name":"Testhost.org","description":"","resourceType":"COMPUTE","resource":{"executionCommands":[]},"host":"Testhost.org","connection":{"connectionProtocol":"SSH","securityProtocol":"PASSWORDS","port":0}}
+{
+  "id" : "Testhost.org_2f39f1d7-92c9-4bfb-afb4-0cf1f4fdfd6f",
+  "name" : "Testhost.org",
+  "description" : "",
+  "resourceType" : "COMPUTE",
+  "resource" : {
+    "executionCommands" : [ ]
+  },
+  "host" : "Testhost.org",
+  "connection" : {
+    "connectionProtocol" : "SSH",
+    "securityProtocol" : "PASSWORDS",
+    "port" : 0
+  }
+}
