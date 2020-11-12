@@ -1,1 +1,75 @@
-{"id":"tempest.dsc.soic.indiana.edu_17614294-7f30-458c-af78-b612ba6e0f88","name":"tempest.dsc.soic.indiana.edu","description":"Cluster in IU for Cinet Virginia Tech","resourceType":"COMPUTE","resource":{"schedulerType":"BATCH","storageResource":{"storageType":"POSIX","connection":{"connectionProtocol":"SCP","securityProtocol":"SSHKEYS","port":22}},"executionCommands":[{"commandType":"SERIAL","commandPrefix":"","moduleDependencies":[]},{"commandType":"OPENMP","commandPrefix":"","moduleDependencies":[]},{"commandType":"OPENMP_MPI","commandPrefix":"","moduleDependencies":[]},{"commandType":"CRAY_MPI","commandPrefix":"","moduleDependencies":[]},{"commandType":"MPI","commandPrefix":"ibrun","moduleDependencies":[]},{"commandType":"CCM","commandPrefix":"","moduleDependencies":[]}],"batchSystem":{"commandPaths":[{"name":"SUBMISSION","path":"sbatch"},{"name":"JOB_MONITORING","path":"squeue"},{"name":"DELETION","path":"scancel"}],"partitions":[{"name":"batch","totalNodes":0,"nodeHardware":{"cpuCount":0,"memorySize":"0"},"computeQuotas":{"maxJobsTotal":0,"maxNodesPerJob":0,"maxTimePerJob":0,"maxMemoryPerJob":0,"maxCPUsPerJob":0}}]}},"host":"tempest.dsc.soic.indiana.edu","connection":{"connectionProtocol":"SSH","securityProtocol":"SSHKEYS","port":22}}
+{
+  "id" : "tempest.dsc.soic.indiana.edu_17614294-7f30-458c-af78-b612ba6e0f88",
+  "name" : "tempest.dsc.soic.indiana.edu",
+  "description" : "Cluster in IU for Cinet Virginia Tech",
+  "resourceType" : "COMPUTE",
+  "resource" : {
+    "schedulerType" : "BATCH",
+    "storageResource" : {
+      "storageType" : "POSIX",
+      "connection" : {
+        "connectionProtocol" : "SCP",
+        "securityProtocol" : "SSHKEYS",
+        "port" : 22
+      }
+    },
+    "executionCommands" : [ {
+      "commandType" : "MPI",
+      "commandPrefix" : "ibrun",
+      "moduleDependencies" : [ ]
+    }, {
+      "commandType" : "OPENMP",
+      "commandPrefix" : "",
+      "moduleDependencies" : [ ]
+    }, {
+      "commandType" : "OPENMP_MPI",
+      "commandPrefix" : "",
+      "moduleDependencies" : [ ]
+    }, {
+      "commandType" : "CCM",
+      "commandPrefix" : "",
+      "moduleDependencies" : [ ]
+    }, {
+      "commandType" : "SERIAL",
+      "commandPrefix" : "",
+      "moduleDependencies" : [ ]
+    }, {
+      "commandType" : "CRAY_MPI",
+      "commandPrefix" : "",
+      "moduleDependencies" : [ ]
+    } ],
+    "batchSystem" : {
+      "commandPaths" : [ {
+        "name" : "SUBMISSION",
+        "path" : "sbatch"
+      }, {
+        "name" : "JOB_MONITORING",
+        "path" : "squeue"
+      }, {
+        "name" : "DELETION",
+        "path" : "scancel"
+      } ],
+      "partitions" : [ {
+        "name" : "batch",
+        "totalNodes" : 0,
+        "nodeHardware" : {
+          "cpuCount" : 0,
+          "memorySize" : "0"
+        },
+        "computeQuotas" : {
+          "maxJobsTotal" : 0,
+          "maxNodesPerJob" : 0,
+          "maxTimePerJob" : 0,
+          "maxMemoryPerJob" : 0,
+          "maxCPUsPerJob" : 0
+        }
+      } ]
+    }
+  },
+  "host" : "tempest.dsc.soic.indiana.edu",
+  "connection" : {
+    "connectionProtocol" : "SSH",
+    "securityProtocol" : "SSHKEYS",
+    "port" : 22
+  }
+}
