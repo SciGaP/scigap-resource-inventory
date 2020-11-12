@@ -1,1 +1,23 @@
-{"id":"tcs.tandysupercomputing.org_81ade6aa-a361-4393-a176-cfb2b3fa1ecd","name":"tcs.tandysupercomputing.org","description":"","resourceType":"COMPUTE","resource":{"storageResource":{"storageType":"POSIX","connection":{"connectionProtocol":"SCP","securityProtocol":"SSHKEYS","port":22}},"executionCommands":[]},"host":"tcs.tandysupercomputing.org","connection":{"connectionProtocol":"SSH","securityProtocol":"SSHKEYS","port":22}}
+{
+  "id" : "tcs.tandysupercomputing.org_81ade6aa-a361-4393-a176-cfb2b3fa1ecd",
+  "name" : "tcs.tandysupercomputing.org",
+  "description" : "",
+  "resourceType" : "COMPUTE",
+  "resource" : {
+    "storageResource" : {
+      "storageType" : "POSIX",
+      "connection" : {
+        "connectionProtocol" : "SCP",
+        "securityProtocol" : "SSHKEYS",
+        "port" : 22
+      }
+    },
+    "executionCommands" : [ ]
+  },
+  "host" : "tcs.tandysupercomputing.org",
+  "connection" : {
+    "connectionProtocol" : "SSH",
+    "securityProtocol" : "SSHKEYS",
+    "port" : 22
+  }
+}
