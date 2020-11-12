@@ -1,1 +1,55 @@
-{"id":"comet.sdsc.xsede.org_173f87d8-6986-4484-a62f-305ce8dce13d","name":"comet.sdsc.xsede.org","description":"Comet hostname for GPU queue","resourceType":"COMPUTE","resource":{"schedulerType":"BATCH","storageResource":{"storageType":"POSIX","connection":{"connectionProtocol":"SCP","securityProtocol":"SSHKEYS","port":22}},"executionCommands":[{"commandType":"MPI","commandPrefix":"mpiexec","moduleDependencies":[]}],"batchSystem":{"commandPaths":[{"name":"SUBMISSION","path":"sbatch"},{"name":"JOB_MONITORING","path":"squeue"},{"name":"DELETION","path":"scancel"}],"partitions":[{"name":"gpu","totalNodes":8,"nodeHardware":{"cpuCount":20,"memorySize":"0"},"computeQuotas":{"maxJobsTotal":1,"maxNodesPerJob":8,"maxTimePerJob":2880,"maxMemoryPerJob":0,"maxCPUsPerJob":180}}]}},"host":"comet.sdsc.xsede.org","connection":{"connectionProtocol":"SSH","securityProtocol":"SSHKEYS","port":22}}
+{
+  "id" : "comet.sdsc.xsede.org_173f87d8-6986-4484-a62f-305ce8dce13d",
+  "name" : "comet.sdsc.xsede.org",
+  "description" : "Comet hostname for GPU queue",
+  "resourceType" : "COMPUTE",
+  "resource" : {
+    "schedulerType" : "BATCH",
+    "storageResource" : {
+      "storageType" : "POSIX",
+      "connection" : {
+        "connectionProtocol" : "SCP",
+        "securityProtocol" : "SSHKEYS",
+        "port" : 22
+      }
+    },
+    "executionCommands" : [ {
+      "commandType" : "MPI",
+      "commandPrefix" : "mpiexec",
+      "moduleDependencies" : [ ]
+    } ],
+    "batchSystem" : {
+      "commandPaths" : [ {
+        "name" : "SUBMISSION",
+        "path" : "sbatch"
+      }, {
+        "name" : "JOB_MONITORING",
+        "path" : "squeue"
+      }, {
+        "name" : "DELETION",
+        "path" : "scancel"
+      } ],
+      "partitions" : [ {
+        "name" : "gpu",
+        "totalNodes" : 8,
+        "nodeHardware" : {
+          "cpuCount" : 20,
+          "memorySize" : "0"
+        },
+        "computeQuotas" : {
+          "maxJobsTotal" : 1,
+          "maxNodesPerJob" : 8,
+          "maxTimePerJob" : 2880,
+          "maxMemoryPerJob" : 0,
+          "maxCPUsPerJob" : 180
+        }
+      } ]
+    }
+  },
+  "host" : "comet.sdsc.xsede.org",
+  "connection" : {
+    "connectionProtocol" : "SSH",
+    "securityProtocol" : "SSHKEYS",
+    "port" : 22
+  }
+}
