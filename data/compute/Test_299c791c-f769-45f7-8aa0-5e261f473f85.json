@@ -1,1 +1,11 @@
-{"id":"Test_299c791c-f769-45f7-8aa0-5e261f473f85","name":"Test","description":"","resourceType":"COMPUTE","resource":{"executionCommands":[]},"host":"Test","connection":{}}
+{
+  "id" : "Test_299c791c-f769-45f7-8aa0-5e261f473f85",
+  "name" : "Test",
+  "description" : "",
+  "resourceType" : "COMPUTE",
+  "resource" : {
+    "executionCommands" : [ ]
+  },
+  "host" : "Test",
+  "connection" : { }
+}
