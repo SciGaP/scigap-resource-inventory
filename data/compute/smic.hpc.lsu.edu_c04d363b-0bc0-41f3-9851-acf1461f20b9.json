@@ -1,1 +1,47 @@
-{"id":"smic.hpc.lsu.edu_c04d363b-0bc0-41f3-9851-acf1461f20b9","name":"smic.hpc.lsu.edu","description":"LSU Super Mic","resourceType":"COMPUTE","resource":{"schedulerType":"BATCH","executionCommands":[{"commandType":"MPI","commandPrefix":"mpirun -np","moduleDependencies":[]}],"batchSystem":{"commandPaths":[{"name":"SUBMISSION","path":"qsub"},{"name":"JOB_MONITORING","path":"qstat"},{"name":"DELETION","path":"qdel"}],"partitions":[{"name":"workq","totalNodes":128,"nodeHardware":{"cpuCount":0,"memorySize":"0"},"computeQuotas":{"maxJobsTotal":50,"maxNodesPerJob":128,"maxTimePerJob":4320,"maxMemoryPerJob":0,"maxCPUsPerJob":3072}}]}},"host":"smic.hpc.lsu.edu","connection":{"connectionProtocol":"SSH","securityProtocol":"SSHKEYS","port":0}}
+{
+  "id" : "smic.hpc.lsu.edu_c04d363b-0bc0-41f3-9851-acf1461f20b9",
+  "name" : "smic.hpc.lsu.edu",
+  "description" : "LSU Super Mic",
+  "resourceType" : "COMPUTE",
+  "resource" : {
+    "schedulerType" : "BATCH",
+    "executionCommands" : [ {
+      "commandType" : "MPI",
+      "commandPrefix" : "mpirun -np",
+      "moduleDependencies" : [ ]
+    } ],
+    "batchSystem" : {
+      "commandPaths" : [ {
+        "name" : "SUBMISSION",
+        "path" : "qsub"
+      }, {
+        "name" : "JOB_MONITORING",
+        "path" : "qstat"
+      }, {
+        "name" : "DELETION",
+        "path" : "qdel"
+      } ],
+      "partitions" : [ {
+        "name" : "workq",
+        "totalNodes" : 128,
+        "nodeHardware" : {
+          "cpuCount" : 0,
+          "memorySize" : "0"
+        },
+        "computeQuotas" : {
+          "maxJobsTotal" : 50,
+          "maxNodesPerJob" : 128,
+          "maxTimePerJob" : 4320,
+          "maxMemoryPerJob" : 0,
+          "maxCPUsPerJob" : 3072
+        }
+      } ]
+    }
+  },
+  "host" : "smic.hpc.lsu.edu",
+  "connection" : {
+    "connectionProtocol" : "SSH",
+    "securityProtocol" : "SSHKEYS",
+    "port" : 0
+  }
+}
