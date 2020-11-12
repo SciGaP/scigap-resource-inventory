@@ -1,0 +1,1 @@
+{"id":"hpc.usd.edu_62b31087-4b1f-458e-8a25-3ed5500a91e5","name":"hpc.usd.edu","description":"South Dakota HPC Cluster","resourceType":"COMPUTE","resource":{"executionCommands":[]},"host":"hpc.usd.edu","connection":{"connectionProtocol":"SSH","securityProtocol":"SSHKEYS","port":0}}
