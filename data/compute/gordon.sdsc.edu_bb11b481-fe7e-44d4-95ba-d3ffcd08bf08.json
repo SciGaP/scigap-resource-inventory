@@ -1,0 +1,1 @@
+{"id":"gordon.sdsc.edu_bb11b481-fe7e-44d4-95ba-d3ffcd08bf08","name":"gordon.sdsc.edu","description":"","resourceType":"COMPUTE","resource":{"storageResource":{"storageType":"POSIX","connection":{"connectionProtocol":"SCP","securityProtocol":"SSHKEYS","port":22}},"executionCommands":[]},"host":"gordon.sdsc.edu","connection":{}}
