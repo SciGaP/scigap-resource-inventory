@@ -1,1 +1,12 @@
-{"id":"NewLocalResource_70071a71-5ca3-496a-b9d6-4860f4b81946","name":"NewLocalResource","description":"","resourceType":"COMPUTE","resource":{"storageResource":{},"executionCommands":[]},"host":"NewLocalResource","connection":{}}
+{
+  "id" : "NewLocalResource_70071a71-5ca3-496a-b9d6-4860f4b81946",
+  "name" : "NewLocalResource",
+  "description" : "",
+  "resourceType" : "COMPUTE",
+  "resource" : {
+    "storageResource" : { },
+    "executionCommands" : [ ]
+  },
+  "host" : "NewLocalResource",
+  "connection" : { }
+}
