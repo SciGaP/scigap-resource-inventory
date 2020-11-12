@@ -1,1 +1,83 @@
-{"id":"carbonate.uits.iu.edu_f460c07c-001a-48b9-ac5e-ca799ddd2a5a","name":"carbonate.uits.iu.edu","description":"Large memory computer cluster configured to support high-performance, data-intensive computing","resourceType":"COMPUTE","resource":{"schedulerType":"BATCH","storageResource":{"storageType":"POSIX","connection":{"connectionProtocol":"SCP","securityProtocol":"SSHKEYS","port":22}},"executionCommands":[{"commandType":"MPI","commandPrefix":"mpirun -np","moduleDependencies":[]}],"batchSystem":{"commandPaths":[{"name":"SUBMISSION","path":"qsub"},{"name":"JOB_MONITORING","path":"qstat"},{"name":"DELETION","path":"qdel"}],"partitions":[{"name":"batch","totalNodes":1,"nodeHardware":{"cpuCount":0,"memorySize":"0"},"computeQuotas":{"maxJobsTotal":10,"maxNodesPerJob":1,"maxTimePerJob":360,"maxMemoryPerJob":0,"maxCPUsPerJob":16}},{"name":"debug","totalNodes":2,"nodeHardware":{"cpuCount":24,"memorySize":"0"},"computeQuotas":{"maxJobsTotal":2,"maxNodesPerJob":2,"maxTimePerJob":60,"maxMemoryPerJob":0,"maxCPUsPerJob":48}},{"name":"interactive","totalNodes":8,"nodeHardware":{"cpuCount":16,"memorySize":"0"},"computeQuotas":{"maxJobsTotal":2,"maxNodesPerJob":8,"maxTimePerJob":480,"maxMemoryPerJob":0,"maxCPUsPerJob":128}}]}},"host":"carbonate.uits.iu.edu","connection":{"connectionProtocol":"SSH","securityProtocol":"SSHKEYS","port":22}}
+{
+  "id" : "carbonate.uits.iu.edu_f460c07c-001a-48b9-ac5e-ca799ddd2a5a",
+  "name" : "carbonate.uits.iu.edu",
+  "description" : "Large memory computer cluster configured to support high-performance, data-intensive computing",
+  "resourceType" : "COMPUTE",
+  "resource" : {
+    "schedulerType" : "BATCH",
+    "storageResource" : {
+      "storageType" : "POSIX",
+      "connection" : {
+        "connectionProtocol" : "SCP",
+        "securityProtocol" : "SSHKEYS",
+        "port" : 22
+      }
+    },
+    "executionCommands" : [ {
+      "commandType" : "MPI",
+      "commandPrefix" : "mpirun -np",
+      "moduleDependencies" : [ ]
+    } ],
+    "batchSystem" : {
+      "commandPaths" : [ {
+        "name" : "SUBMISSION",
+        "path" : "qsub"
+      }, {
+        "name" : "JOB_MONITORING",
+        "path" : "qstat"
+      }, {
+        "name" : "DELETION",
+        "path" : "qdel"
+      } ],
+      "partitions" : [ {
+        "name" : "batch",
+        "totalNodes" : 1,
+        "nodeHardware" : {
+          "cpuCount" : 0,
+          "memorySize" : "0"
+        },
+        "computeQuotas" : {
+          "maxJobsTotal" : 10,
+          "maxNodesPerJob" : 1,
+          "maxTimePerJob" : 360,
+          "maxMemoryPerJob" : 0,
+          "maxCPUsPerJob" : 16
+        }
+      }, {
+        "name" : "debug",
+        "totalNodes" : 2,
+        "nodeHardware" : {
+          "cpuCount" : 24,
+          "memorySize" : "0"
+        },
+        "computeQuotas" : {
+          "maxJobsTotal" : 2,
+          "maxNodesPerJob" : 2,
+          "maxTimePerJob" : 60,
+          "maxMemoryPerJob" : 0,
+          "maxCPUsPerJob" : 48
+        }
+      }, {
+        "name" : "interactive",
+        "totalNodes" : 8,
+        "nodeHardware" : {
+          "cpuCount" : 16,
+          "memorySize" : "0"
+        },
+        "computeQuotas" : {
+          "maxJobsTotal" : 2,
+          "maxNodesPerJob" : 8,
+          "maxTimePerJob" : 480,
+          "maxMemoryPerJob" : 0,
+          "maxCPUsPerJob" : 128
+        }
+      } ]
+    }
+  },
+  "host" : "carbonate.uits.iu.edu",
+  "connection" : {
+    "connectionProtocol" : "SSH",
+    "securityProtocol" : "SSHKEYS",
+    "port" : 22
+  }
+}
