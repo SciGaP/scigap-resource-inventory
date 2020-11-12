@@ -1,1 +1,11 @@
-{"id":"TestComputeResource_c49179c0-4e8c-4e53-89ea-23b984fd4f68","name":"TestComputeResource","description":"Test Resource","resourceType":"COMPUTE","resource":{"executionCommands":[]},"host":"TestComputeResource","connection":{}}
+{
+  "id" : "TestComputeResource_c49179c0-4e8c-4e53-89ea-23b984fd4f68",
+  "name" : "TestComputeResource",
+  "description" : "Test Resource",
+  "resourceType" : "COMPUTE",
+  "resource" : {
+    "executionCommands" : [ ]
+  },
+  "host" : "TestComputeResource",
+  "connection" : { }
+}
