@@ -1,1 +1,101 @@
-{"id":"bigred2.uits.iu.edu_ac140dca-3c88-46d8-b9ed-875d96ea6908","name":"bigred2.uits.iu.edu","description":"IU BigRed II Cluster","resourceType":"COMPUTE","resource":{"schedulerType":"BATCH","storageResource":{"storageType":"POSIX","connection":{"connectionProtocol":"SCP","securityProtocol":"PASSWORDS","port":22}},"executionCommands":[{"commandType":"SERIAL","commandPrefix":"","moduleDependencies":[]},{"commandType":"OPENMP","commandPrefix":"","moduleDependencies":[]},{"commandType":"OPENMP_MPI","commandPrefix":"","moduleDependencies":[]},{"commandType":"CRAY_MPI","commandPrefix":"aprun -n","moduleDependencies":[]},{"commandType":"MPI","commandPrefix":"aprun","moduleDependencies":[]},{"commandType":"CCM","commandPrefix":"ccmrun","moduleDependencies":[]}],"batchSystem":{"commandPaths":[{"name":"CHECK_JOB","path":"    "},{"name":"JOB_MONITORING","path":"  qstat  "},{"name":"SHOW_START","path":"    "},{"name":"SHOW_QUEUE","path":"    "},{"name":"SUBMISSION","path":"  qsub  "},{"name":"SHOW_RESERVATION","path":"    "},{"name":"DELETION","path":"  qdel  "}],"partitions":[{"name":"cpu","totalNodes":128,"nodeHardware":{"cpuCount":32,"memorySize":"0"},"computeQuotas":{"maxJobsTotal":0,"maxNodesPerJob":128,"maxTimePerJob":2880,"maxMemoryPerJob":0,"maxCPUsPerJob":4096}},{"name":"gpu","totalNodes":21824,"nodeHardware":{"cpuCount":0,"memorySize":"0"},"computeQuotas":{"maxJobsTotal":0,"maxNodesPerJob":21824,"maxTimePerJob":2880,"maxMemoryPerJob":0,"maxCPUsPerJob":1364}}]}},"host":"bigred2.uits.iu.edu","connection":{"connectionProtocol":"SSH","securityProtocol":"SSHKEYS","port":22}}
+{
+  "id" : "bigred2.uits.iu.edu_ac140dca-3c88-46d8-b9ed-875d96ea6908",
+  "name" : "bigred2.uits.iu.edu",
+  "description" : "IU BigRed II Cluster",
+  "resourceType" : "COMPUTE",
+  "resource" : {
+    "schedulerType" : "BATCH",
+    "storageResource" : {
+      "storageType" : "POSIX",
+      "connection" : {
+        "connectionProtocol" : "SCP",
+        "securityProtocol" : "PASSWORDS",
+        "port" : 22
+      }
+    },
+    "executionCommands" : [ {
+      "commandType" : "MPI",
+      "commandPrefix" : "aprun",
+      "moduleDependencies" : [ ]
+    }, {
+      "commandType" : "OPENMP",
+      "commandPrefix" : "",
+      "moduleDependencies" : [ ]
+    }, {
+      "commandType" : "OPENMP_MPI",
+      "commandPrefix" : "",
+      "moduleDependencies" : [ ]
+    }, {
+      "commandType" : "CCM",
+      "commandPrefix" : "ccmrun",
+      "moduleDependencies" : [ ]
+    }, {
+      "commandType" : "SERIAL",
+      "commandPrefix" : "",
+      "moduleDependencies" : [ ]
+    }, {
+      "commandType" : "CRAY_MPI",
+      "commandPrefix" : "aprun -n",
+      "moduleDependencies" : [ ]
+    } ],
+    "batchSystem" : {
+      "commandPaths" : [ {
+        "name" : "SHOW_START",
+        "path" : "    "
+      }, {
+        "name" : "SHOW_QUEUE",
+        "path" : "    "
+      }, {
+        "name" : "JOB_MONITORING",
+        "path" : "  qstat  "
+      }, {
+        "name" : "SHOW_RESERVATION",
+        "path" : "    "
+      }, {
+        "name" : "CHECK_JOB",
+        "path" : "    "
+      }, {
+        "name" : "SUBMISSION",
+        "path" : "  qsub  "
+      }, {
+        "name" : "DELETION",
+        "path" : "  qdel  "
+      } ],
+      "partitions" : [ {
+        "name" : "cpu",
+        "totalNodes" : 128,
+        "nodeHardware" : {
+          "cpuCount" : 32,
+          "memorySize" : "0"
+        },
+        "computeQuotas" : {
+          "maxJobsTotal" : 0,
+          "maxNodesPerJob" : 128,
+          "maxTimePerJob" : 2880,
+          "maxMemoryPerJob" : 0,
+          "maxCPUsPerJob" : 4096
+        }
+      }, {
+        "name" : "gpu",
+        "totalNodes" : 21824,
+        "nodeHardware" : {
+          "cpuCount" : 0,
+          "memorySize" : "0"
+        },
+        "computeQuotas" : {
+          "maxJobsTotal" : 0,
+          "maxNodesPerJob" : 21824,
+          "maxTimePerJob" : 2880,
+          "maxMemoryPerJob" : 0,
+          "maxCPUsPerJob" : 1364
+        }
+      } ]
+    }
+  },
+  "host" : "bigred2.uits.iu.edu",
+  "connection" : {
+    "connectionProtocol" : "SSH",
+    "securityProtocol" : "SSHKEYS",
+    "port" : 22
+  }
+}
