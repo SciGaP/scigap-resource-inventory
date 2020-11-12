@@ -1,1 +1,23 @@
-{"id":"lonestar.tacc.utexas.edu_80ff690d-6472-4077-8155-77a2ca513191","name":"lonestar.tacc.utexas.edu","description":"TACC Lonestar Cluster","resourceType":"COMPUTE","resource":{"storageResource":{"storageType":"POSIX","connection":{"connectionProtocol":"SCP","securityProtocol":"PASSWORDS","port":22}},"executionCommands":[]},"host":"lonestar.tacc.utexas.edu","connection":{"connectionProtocol":"SSH","securityProtocol":"SSHKEYS","port":0}}
+{
+  "id" : "lonestar.tacc.utexas.edu_80ff690d-6472-4077-8155-77a2ca513191",
+  "name" : "lonestar.tacc.utexas.edu",
+  "description" : "TACC Lonestar Cluster",
+  "resourceType" : "COMPUTE",
+  "resource" : {
+    "storageResource" : {
+      "storageType" : "POSIX",
+      "connection" : {
+        "connectionProtocol" : "SCP",
+        "securityProtocol" : "PASSWORDS",
+        "port" : 22
+      }
+    },
+    "executionCommands" : [ ]
+  },
+  "host" : "lonestar.tacc.utexas.edu",
+  "connection" : {
+    "connectionProtocol" : "SSH",
+    "securityProtocol" : "SSHKEYS",
+    "port" : 0
+  }
+}
