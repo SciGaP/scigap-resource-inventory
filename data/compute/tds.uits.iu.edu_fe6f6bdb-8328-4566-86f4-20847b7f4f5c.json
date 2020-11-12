@@ -1,1 +1,59 @@
-{"id":"tds.uits.iu.edu_fe6f6bdb-8328-4566-86f4-20847b7f4f5c","name":"tds.uits.iu.edu","description":"The test version of Big Red II","resourceType":"COMPUTE","resource":{"schedulerType":"BATCH","storageResource":{"storageType":"POSIX","connection":{"connectionProtocol":"SCP","securityProtocol":"SSHKEYS","port":22}},"executionCommands":[{"commandType":"CCM","commandPrefix":"ccmrun","moduleDependencies":[]},{"commandType":"CRAY_MPI","commandPrefix":"aprun -n","moduleDependencies":[]}],"batchSystem":{"commandPaths":[{"name":"SUBMISSION","path":"qsub"},{"name":"JOB_MONITORING","path":"qstat"},{"name":"DELETION","path":"qdel"}],"partitions":[{"name":"cpu","totalNodes":128,"nodeHardware":{"cpuCount":0,"memorySize":"0"},"computeQuotas":{"maxJobsTotal":0,"maxNodesPerJob":128,"maxTimePerJob":2880,"maxMemoryPerJob":0,"maxCPUsPerJob":4096}}]}},"host":"tds.uits.iu.edu","connection":{"connectionProtocol":"SSH","securityProtocol":"SSHKEYS","port":22}}
+{
+  "id" : "tds.uits.iu.edu_fe6f6bdb-8328-4566-86f4-20847b7f4f5c",
+  "name" : "tds.uits.iu.edu",
+  "description" : "The test version of Big Red II",
+  "resourceType" : "COMPUTE",
+  "resource" : {
+    "schedulerType" : "BATCH",
+    "storageResource" : {
+      "storageType" : "POSIX",
+      "connection" : {
+        "connectionProtocol" : "SCP",
+        "securityProtocol" : "SSHKEYS",
+        "port" : 22
+      }
+    },
+    "executionCommands" : [ {
+      "commandType" : "CRAY_MPI",
+      "commandPrefix" : "aprun -n",
+      "moduleDependencies" : [ ]
+    }, {
+      "commandType" : "CCM",
+      "commandPrefix" : "ccmrun",
+      "moduleDependencies" : [ ]
+    } ],
+    "batchSystem" : {
+      "commandPaths" : [ {
+        "name" : "SUBMISSION",
+        "path" : "qsub"
+      }, {
+        "name" : "JOB_MONITORING",
+        "path" : "qstat"
+      }, {
+        "name" : "DELETION",
+        "path" : "qdel"
+      } ],
+      "partitions" : [ {
+        "name" : "cpu",
+        "totalNodes" : 128,
+        "nodeHardware" : {
+          "cpuCount" : 0,
+          "memorySize" : "0"
+        },
+        "computeQuotas" : {
+          "maxJobsTotal" : 0,
+          "maxNodesPerJob" : 128,
+          "maxTimePerJob" : 2880,
+          "maxMemoryPerJob" : 0,
+          "maxCPUsPerJob" : 4096
+        }
+      } ]
+    }
+  },
+  "host" : "tds.uits.iu.edu",
+  "connection" : {
+    "connectionProtocol" : "SSH",
+    "securityProtocol" : "SSHKEYS",
+    "port" : 22
+  }
+}
