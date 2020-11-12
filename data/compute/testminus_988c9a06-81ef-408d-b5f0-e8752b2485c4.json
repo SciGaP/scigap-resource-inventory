@@ -1,1 +1,11 @@
-{"id":"testminus_988c9a06-81ef-408d-b5f0-e8752b2485c4","name":"testminus","description":"","resourceType":"COMPUTE","resource":{"executionCommands":[]},"host":"testminus","connection":{}}
+{
+  "id" : "testminus_988c9a06-81ef-408d-b5f0-e8752b2485c4",
+  "name" : "testminus",
+  "description" : "",
+  "resourceType" : "COMPUTE",
+  "resource" : {
+    "executionCommands" : [ ]
+  },
+  "host" : "testminus",
+  "connection" : { }
+}
